@@ -1,0 +1,13 @@
+name: agi-phone
+version: 0.1.0
+description: "Control a connected Android phone via AI agent — send instructions, check results, computer-use automation"
+author: "AGI Inc"
+requires_env:
+  - name: PHONE_RELAY_URL
+    description: "Base URL of the phone FCM relay server (e.g. https://mobile-claw-mcp-server.vercel.app)"
+    url: "https://github.com/stevekfrey/mobile-claw-mcp-server"
+    secret: false
+provides_tools:
+  - send_to_phone
+  - get_phone_result
+  - phone_do
